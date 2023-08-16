@@ -84,6 +84,7 @@
             padding: 20px;
             flex-direction: column;
             border-radius:8px;
+            border:0;
             cursor: pointer;
          }
      }
@@ -93,37 +94,38 @@
 
  /*heater contactos portada*/
  .portada2{
-   background-image: url(../multimedia/img/johnnyportada.png);
-   background-size: cover;
-   width: 100%;
-   height:150px;
-   background-attachment: fixed;
-   text-align: center;
-   
-   .letras-centrales{
-    text-align: center;
-    color: #bebcbc;
-    font-size: 60px;
-   
- }
-}
+    background-image: url(../multimedia/img/johnnyportada.png);
+    width: 100%;
+    height:200px;
+    background-size: cover;
+    text-align:center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  .letras-centrales{
+      text-align: center;
+      color: #bebcbc;
+      font-size: 60px; 
+      margin:20px;
+   }
+  }
  /*heater nosotros portada*/
  .portada3{
-   background-image: url(../multimedia/img/johnnyportada.png);
-   background-size: cover;
-   width: 100%;
-   height:150px;
-   background-attachment: fixed;
-   text-align: center;
-      
-   .letras-centrales{
-    text-align: center;
-    color: #bebcbc;
-
-    font-size: 60px;
-   
- }
-}
+    background-image: url(../multimedia/img/johnnyportada.png);
+    width: 100%;
+    height:200px;
+    background-size: cover;
+    text-align:center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  .letras-centrales{
+      text-align: center;
+      color: #bebcbc;
+      font-size: 60px; 
+      margin:20px;
+    }
+  }
 
  /*main index*/
 
@@ -176,11 +178,12 @@
     text-align: center;
     margin: 35px;
     font-size: 25px;
-    color: #3b3b3b;
+    color: #fffcfc;
     .palabra{
       padding: 20px;
       text-align: center;
       font-size: 20px;
+      color:#060606;
     }
  
     form{
@@ -231,16 +234,37 @@
   /*main nosotros*/
   .mainnosotros{
    margin: 30px;
-   text-align: center;
-   h4{
-    font-size: 30px;
-    margin-top: 40px;
-   }
-   p{
-    margin-bottom: 30px;
-    span{
-        font-weight: 900;
-       }
+   
+   .valores{
+    
+    align-items: center;
+    text-align:center;
+    justify-items: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    div{
+      border:solid  #3b3b3b;
+      width:400px;
+      height:95%;
+      padding:40px;
+      font-size:12px;
+      border-radius: 5px;
+      cursor: pointer;
+      img{
+        margin:10px;
+        width: 65px;
+      }
+      h4{
+        font-size: 25px;
+      }
+      p{
+        text-align: justify;
+      }
+    }
+    div:hover{
+      background-color: yellow;
+    }
    }
   }
 
