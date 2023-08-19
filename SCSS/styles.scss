@@ -40,12 +40,16 @@
     .menu{
       display:none;
     }
+
     @media(max-width:768px){
+      .logo{
+        font-size:35px;
+      }
   
       .menu{
       display:block;
       margin:40px;
-      width: 45px;
+      width: 35px;
       order:-1;
      }
      .menu:hover + ul {
@@ -57,23 +61,31 @@
       top:0;
       width:250px;
       height:100vh;
-      background-color: #fafafa;
+      background-color: #bfbfbf;
       flex-direction:column;
       align-items: center;
       padding-top:50px;
       transition: 0.5s;
+      
       li a{
         color:#1c1b1b;
         margin-right:15px;
         cursor: pointer;
+        font-size: 20px;
 
       }
      }
      .enlaces:hover{
       left:0;
      }
+    
    }
-}
+   @media(max-width:576px){
+    .logo{
+      font-size:25px;
+    }
+  }
+ }
 
 
 
@@ -136,13 +148,13 @@
      }
      @media(max-width:576px){
       .letras-centrales{
-        font-size: 40px; 
+        font-size: 35px; 
      }
      .info{
-        font-size: 50px;
+        font-size: 45px;
      }
      .info2{
-        font-size: 25px;
+        font-size: 30px;
      }
    }
  }
@@ -151,7 +163,7 @@
 
  /*heater contactos portada*/
  .portada2{
-    background-image: url(../multimedia/img/johnnyportada.png);
+    background-image: url(../multimedia/img/Musicos/smiths.jpg);
     width: 100%;
     height:200px;
     background-size: cover;
@@ -168,7 +180,7 @@
   }
  /*heater nosotros portada*/
  .portada3{
-    background-image: url(../multimedia/img/johnnyportada.png);
+    background-image: url(../multimedia/img/Musicos/thebeatles.jpg);
     width: 100%;
     height:200px;
     background-size: cover;
@@ -178,7 +190,7 @@
     align-items: center;
   .letras-centrales{
       text-align: center;
-      color: #bebcbc;
+      color: #dddbdb;
       font-size: 60px; 
       margin:20px;
     }
@@ -271,7 +283,7 @@
 			padding: 20px;
 			margin: 0 auto;
       margin-bottom: 30px;
-			width: 500px;
+			width: 550px;
       input{
         border: 0;
         outline: none;
@@ -306,6 +318,20 @@
         background-color: yellow;
       }
 		}
+    @media(max-width:576px){
+      form{
+			width: 350px;
+      input{
+        border: 0;
+        outline: none;
+        width: 250px;
+        padding: 10px;
+        .field{
+          border: solid 1px #ccc;
+        }
+      }
+      }
+    }
   }
  
   /*main nosotros*/
@@ -343,6 +369,18 @@
       background-color: yellow;
     }
    }
+   @media(max-width:992px){
+    .valores{
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+    }
+   }
+   @media(max-width:768px){
+    .valores{
+      grid-template-columns: 100%;
+     
+    }
+  }
   }
 
 
@@ -406,7 +444,36 @@
               font-size: 13px;
              }
          }
-         .maps{height:85%}
+         .redes_sociales{
+          .redes{
+            font-size:13px;
+
+            .twitter{
+           
+              width: 30px;
+              height: 30px;
+              background-size: fill;
+              margin-right: 10px;
+            }
+            .instagram{
+           
+              width: 30px;
+              height: 30px;
+              background-size: fill;
+              margin-right: 10px;
+            }
+            .facebook{
+           
+              width: 30px;
+              height: 30px;
+              background-size: fill;
+              margin-right: 10px;
+            }
+          }
+  
+          
+        }
+         
      
       }
       @media(max-width:576px){

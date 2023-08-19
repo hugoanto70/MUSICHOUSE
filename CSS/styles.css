@@ -36,10 +36,13 @@
   display: none;
 }
 @media (max-width: 768px) {
+  .navegador .logo {
+    font-size: 35px;
+  }
   .navegador .menu {
     display: block;
     margin: 40px;
-    width: 45px;
+    width: 35px;
     order: -1;
   }
   .navegador .menu:hover + ul {
@@ -51,7 +54,7 @@
     top: 0;
     width: 250px;
     height: 100vh;
-    background-color: #fafafa;
+    background-color: #bfbfbf;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
@@ -61,9 +64,15 @@
     color: #1c1b1b;
     margin-right: 15px;
     cursor: pointer;
+    font-size: 20px;
   }
   .navegador .enlaces:hover {
     left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .navegador .logo {
+    font-size: 25px;
   }
 }
 
@@ -125,13 +134,13 @@
 }
 @media (max-width: 576px) {
   .portada .letras-centrales {
-    font-size: 40px;
+    font-size: 35px;
   }
   .portada .info {
-    font-size: 50px;
+    font-size: 45px;
   }
   .portada .info2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -139,7 +148,7 @@
 .portada2 {
   background-image: url(../multimedia/img/Musicos/smiths.jpg);
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-size: cover;
   text-align: center;
   display: grid;
@@ -157,7 +166,7 @@
 .portada3 {
   background-image: url(../multimedia/img/Musicos/thebeatles.jpg);
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-size: cover;
   text-align: center;
   display: grid;
@@ -166,7 +175,7 @@
 }
 .portada3 .letras-centrales {
   text-align: center;
-  color: #bebcbc;
+  color: #dddbdb;
   font-size: 60px;
   margin: 20px;
 }
@@ -250,7 +259,7 @@
   padding: 20px;
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 500px;
+  width: 550px;
 }
 .maincontactos form input {
   border: 0;
@@ -283,7 +292,20 @@
 }
 .maincontactos .center-content .boton:hover {
   background-color: yellow;
-  
+}
+@media (max-width: 576px) {
+  .maincontactos form {
+    width: 350px;
+  }
+  .maincontactos form input {
+    border: 0;
+    outline: none;
+    width: 250px;
+    padding: 10px;
+  }
+  .maincontactos form input .field {
+    border: solid 1px #ccc;
+  }
 }
 
 /*main nosotros*/
@@ -318,7 +340,17 @@
 }
 .mainnosotros .valores div:hover {
   background-color: yellow;
-  transition: 1s;
+}
+@media (max-width: 992px) {
+  .mainnosotros .valores {
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .mainnosotros .valores {
+    grid-template-columns: 100%;
+  }
 }
 
 /*FOOTER*/
@@ -375,8 +407,26 @@
     color: #b1afaf;
     font-size: 13px;
   }
-  .pie .maps {
-    height: 85%;
+  .pie .redes_sociales .redes {
+    font-size: 13px;
+  }
+  .pie .redes_sociales .redes .twitter {
+    width: 30px;
+    height: 30px;
+    background-size: fill;
+    margin-right: 10px;
+  }
+  .pie .redes_sociales .redes .instagram {
+    width: 30px;
+    height: 30px;
+    background-size: fill;
+    margin-right: 10px;
+  }
+  .pie .redes_sociales .redes .facebook {
+    width: 30px;
+    height: 30px;
+    background-size: fill;
+    margin-right: 10px;
   }
 }
 @media (max-width: 576px) {
