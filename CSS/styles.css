@@ -56,7 +56,7 @@
     top: 0;
     width: 250px;
     height: 100vh;
-    background-color: #bfbfbf;
+    background-color: #e3e3e3;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
@@ -93,21 +93,24 @@
 .portada .letras-centrales {
   text-align: center;
   color: #bebcbc;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
   font-size: 60px;
   margin-top: 40px;
   cursor: pointer;
 }
 .portada .info {
-  color: #f3f0f0;
+  color: #f3f3f0;
   text-align: center;
   text-decoration: solid;
   font-size: 70px;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 .portada .info2 {
   color: #f3f0f0;
   text-align: center;
   text-decoration: solid;
   font-size: 35px;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 .portada .articulo {
   text-align: center;
@@ -163,6 +166,7 @@
   color: #fbf6f6;
   font-size: 60px;
   margin: 20px;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 @media (max-width: 576px) {
   .portada2 .letras-centrales {
@@ -183,7 +187,8 @@
 }
 .portada3 .letras-centrales {
   text-align: center;
-  color: #dddbdb;
+  color: #fbf6f6;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
   font-size: 60px;
   margin: 20px;
 }
@@ -358,6 +363,7 @@
 }
 .mainnosotros .valores div:hover {
   background-color: yellow;
+  transition: 0.5s;
 }
 @media (max-width: 992px) {
   .mainnosotros .valores {

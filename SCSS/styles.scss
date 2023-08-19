@@ -63,7 +63,7 @@
       top:0;
       width:250px;
       height:100vh;
-      background-color: #bfbfbf;
+      background-color: #e3e3e3;
       flex-direction:column;
       align-items: center;
       padding-top:50px;
@@ -106,21 +106,24 @@
     .letras-centrales{
         text-align: center;
         color: #bebcbc;
+        text-shadow: 5px 5px 20px rgba(0,0,0,5);
         font-size: 60px; 
         margin-top:40px;
         cursor: pointer;
      }
      .info{
-        color: #f3f0f0;
+        color: #f3f3f0;
         text-align:center;
         text-decoration: solid;
         font-size: 70px;
+        text-shadow: 5px 5px 20px rgba(0,0,0,20);
      }
      .info2{
         color: #f3f0f0;
         text-align:center;
         text-decoration: solid;
         font-size: 35px;
+        text-shadow: 5px 5px 20px rgba(0,0,0,20);
     
      }
      .articulo{
@@ -179,6 +182,7 @@
       color: #fbf6f6;
       font-size: 60px; 
       margin:20px;
+      text-shadow: 5px 5px 20px rgba(0,0,0,20);
       @media(max-width:576px){
         font-size: 40px; 
       }
@@ -196,7 +200,8 @@
     align-items: center;
   .letras-centrales{
       text-align: center;
-      color: #dddbdb;
+      color: #fbf6f6;
+      text-shadow: 5px 5px 20px rgba(0,0,0,20);
       font-size: 60px; 
       margin:20px;
     }
@@ -384,6 +389,7 @@
     }
     div:hover{
       background-color: yellow;
+      transition: 0.5s;
     }
    }
    @media(max-width:992px){
