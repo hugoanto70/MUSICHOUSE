@@ -340,13 +340,14 @@
       input{
         border: 0;
         outline: none;
-        width: 250px;
+        width: 150px;
         padding: 10px;
         .field{
           border: solid 1px #ccc;
         }
       }
       }
+      
     }
   }
  
@@ -468,14 +469,12 @@
            
               width: 30px;
               height: 30px;
-              background-size: fill;
               margin-right: 10px;
             }
             .instagram{
            
               width: 30px;
               height: 30px;
-              background-size: fill;
               margin-right: 10px;
             }
             .facebook{
@@ -494,16 +493,46 @@
       }
       @media(max-width:576px){
         .datos{
-          font-size: 13px;
+          font-size: 16px;
           margin: 40px; 
           span{
               color: #b1afaf;;
               font-size: 10px;
              }
          }
-         .maps{
-          height:85%;
-          width: 70%;
+         .redes_sociales{
+          .redes{
+            font-size:13px;
+            margin-top: 5px;
+
+            .twitter{
+           
+              width: 25px;
+              height: 25px;
+              background-size: fill;
+              margin-right: 10px;
+              margin-bottom:10px;
+              
+            }
+            .instagram{
+           
+              width: 25px;
+              height: 25px;
+              background-size: fill;
+              margin-right: 10px;
+              margin-bottom:10px;
+            }
+            .facebook{
+           
+              width: 25px;
+              height: 25px;
+              background-size: fill;
+              margin-right: 10px;
+              margin-bottom:10px;
+            }
+          }
+  
+          
         }
      
       }
@@ -548,4 +577,65 @@
       }
   }
   
-  /*Media Responsive*/
+  /*COMPRA STRATOCASTER*/
+  .compra_guitarra{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:50px;
+    justify-items: center;
+    p{
+      text-align: justify;
+    }
+    img{
+      width: 450px;
+    }
+    
+    h6{
+      font-family: 'Chakra Petch', sans-serif;
+      font-size:30px;
+      padding-bottom:15px;
+    }
+    .precio{
+      color: #b80c0c;
+      font-size:25px;
+      font-weight:bold;
+    }
+    ul{
+      padding-top:15px;
+      list-style:none;
+      li{
+        padding-top:15px;
+        padding-bottom: 10px;
+        font-weight:bold;
+      }
+    }
+    .boton_compra{
+      background-color: rgb(251, 224, 25);
+      font-size: 20px;
+      text-decoration: none;
+      padding: 20px;
+      border-radius:8px;
+      border:0;
+      cursor: pointer;
+    }
+    @media(max-width:728px){
+      grid-template-columns: 100%;
+      img{
+        width:450px;
+      }
+      h6{
+        padding-top: 40px;
+      }
+    }
+    @media(max-width:568px){
+      img{
+        width:300px
+      }
+      h6{
+        font-size:20px;
+      }
+      .precio{
+        font-size:15px;
+      }
+    }
+  }

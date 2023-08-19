@@ -318,7 +318,7 @@
   .maincontactos form input {
     border: 0;
     outline: none;
-    width: 250px;
+    width: 150px;
     padding: 10px;
   }
   .maincontactos form input .field {
@@ -431,13 +431,11 @@
   .pie .redes_sociales .redes .twitter {
     width: 30px;
     height: 30px;
-    background-size: fill;
     margin-right: 10px;
   }
   .pie .redes_sociales .redes .instagram {
     width: 30px;
     height: 30px;
-    background-size: fill;
     margin-right: 10px;
   }
   .pie .redes_sociales .redes .facebook {
@@ -449,16 +447,37 @@
 }
 @media (max-width: 576px) {
   .pie .datos {
-    font-size: 13px;
+    font-size: 16px;
     margin: 40px;
   }
   .pie .datos span {
     color: #b1afaf;
     font-size: 10px;
   }
-  .pie .maps {
-    height: 85%;
-    width: 70%;
+  .pie .redes_sociales .redes {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  .pie .redes_sociales .redes .twitter {
+    width: 25px;
+    height: 25px;
+    background-size: fill;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .pie .redes_sociales .redes .instagram {
+    width: 25px;
+    height: 25px;
+    background-size: fill;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .pie .redes_sociales .redes .facebook {
+    width: 25px;
+    height: 25px;
+    background-size: fill;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -500,6 +519,68 @@
   }
 }
 
-/*Media Responsive*/
+/*COMPRA STRATOCASTER*/
+.compra_guitarra {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 50px;
+  justify-items: center;
+}
+.compra_guitarra p {
+  text-align: justify;
+}
+.compra_guitarra img {
+  width: 450px;
+}
+.compra_guitarra h6 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.compra_guitarra .precio {
+  color: #b80c0c;
+  font-size: 25px;
+  font-weight: bold;
+}
+.compra_guitarra ul {
+  padding-top: 15px;
+  list-style: none;
+}
+.compra_guitarra ul li {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.compra_guitarra .boton_compra {
+  background-color: rgb(251, 224, 25);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+@media (max-width: 728px) {
+  .compra_guitarra {
+    grid-template-columns: 100%;
+  }
+  .compra_guitarra img {
+    width: 450px;
+  }
+  .compra_guitarra h6 {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 568px) {
+  .compra_guitarra img {
+    width: 300px;
+  }
+  .compra_guitarra h6 {
+    font-size: 20px;
+  }
+  .compra_guitarra .precio {
+    font-size: 15px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
