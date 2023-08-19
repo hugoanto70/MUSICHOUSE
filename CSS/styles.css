@@ -35,7 +35,7 @@
 .navegador .menu {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .navegador .logo {
     font-size: 35px;
   }
@@ -49,6 +49,8 @@
     left: 0;
   }
   .navegador .enlaces {
+    z-index: 9999;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     left: -500px;
     position: fixed;
     top: 0;
@@ -64,7 +66,8 @@
     color: #1c1b1b;
     margin-right: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Chakra Petch", sans-serif;
   }
   .navegador .enlaces:hover {
     left: 0;
@@ -148,7 +151,7 @@
 .portada2 {
   background-image: url(../multimedia/img/Musicos/smiths.jpg);
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   text-align: center;
   display: grid;
@@ -157,16 +160,21 @@
 }
 .portada2 .letras-centrales {
   text-align: center;
-  color: #bebcbc;
+  color: #fbf6f6;
   font-size: 60px;
   margin: 20px;
+}
+@media (max-width: 576px) {
+  .portada2 .letras-centrales {
+    font-size: 40px;
+  }
 }
 
 /*heater nosotros portada*/
 .portada3 {
   background-image: url(../multimedia/img/Musicos/thebeatles.jpg);
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-size: cover;
   text-align: center;
   display: grid;
@@ -190,37 +198,47 @@
 .mainindex .conjunto {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  overflow: hidden;
+  background: #fff;
+  transition: all 400ms ease;
 }
-.mainindex .conjunto div {
+.mainindex .conjunto .card:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.mainindex .conjunto .card {
   cursor: pointer;
   width: 85px;
   height: 85%;
   border: solid #3b3b3b;
   width: 300px;
   border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 400ms ease;
   margin: 30px;
 }
-.mainindex .conjunto div .stratocaster {
+.mainindex .conjunto .card .stratocaster {
   width: 178px;
   margin: 31px;
 }
-.mainindex .conjunto div .telecaster {
+.mainindex .conjunto .card .telecaster {
   width: 150px;
   margin: 40px;
 }
-.mainindex .conjunto div .lespaul {
+.mainindex .conjunto .card .lespaul {
   width: 150px;
   margin: 40px;
 }
-.mainindex .conjunto div .casino {
+.mainindex .conjunto .card .casino {
   width: 160px;
   margin: 35px;
 }
-.mainindex .conjunto div P {
+.mainindex .conjunto .card P {
   font-size: 20px;
   color: #b80c0c;
 }
-@media (max-width: 992px) {
+@media (max-width: 998px) {
   .mainindex .conjunto {
     grid-template-columns: 50% 50%;
     justify-items: center;
@@ -295,7 +313,7 @@
 }
 @media (max-width: 576px) {
   .maincontactos form {
-    width: 350px;
+    width: 300px;
   }
   .maincontactos form input {
     border: 0;
@@ -455,12 +473,31 @@
   margin: 20px;
 }
 .galeria #carouselExample {
-  width: 50%;
+  width: 40%;
 }
 .galeria .carousel-item img {
   object-fit: cover;
   height: 400px;
-  margin: 20px;
+}
+@media (max-width: 768px) {
+  .galeria #carouselExample {
+    height: 450px;
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .galeria #carouselExample {
+    height: 450px;
+    width: 100%;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 428px) {
+  .galeria #carouselExample {
+    height: 450px;
+    width: 100%;
+    padding-right: 10px;
+  }
 }
 
 /*Media Responsive*/
