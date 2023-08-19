@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -17,7 +18,7 @@
     justify-content:space-between;
    
     .logo{
-        font-family: 'Chakra Petch', sans-serif;
+        font-family: 'Chakra Petch', 'Barlow Condensed';
         font-size: 45px;
         color: #ffff;
         padding:50px ;
@@ -74,7 +75,7 @@
         margin-right:15px;
         cursor: pointer;
         font-size: 25px;
-        font-family: 'Chakra Petch', sans-serif;
+        font-family: 'Chakra Petch', 'Barlow Condensed';
 
       }
      }
@@ -183,7 +184,7 @@
       color: #fbf6f6;
       font-size: 60px; 
       margin:20px;
-      text-shadow: 5px 5px 20px rgba(0,0,0,20);
+      text-shadow: 5px 5px 20px rgba(0,0,0,0.5);
       @media(max-width:576px){
         font-size: 40px; 
       }
@@ -202,7 +203,7 @@
   .letras-centrales{
       text-align: center;
       color: #fbf6f6;
-      text-shadow: 5px 5px 20px rgba(0,0,0,20);
+      text-shadow: 5px 5px 20px rgba(0,0,0,1);
       font-size: 60px; 
       margin:20px;
     }
@@ -598,7 +599,7 @@
     }
     
     h6{
-      font-family: 'Chakra Petch', sans-serif;
+      font-family: 'Chakra Petch', 'Barlow Condensed';
       font-size:30px;
       padding-bottom:15px;
     }

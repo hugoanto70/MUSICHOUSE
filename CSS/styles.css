@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,500&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -15,7 +16,7 @@
   justify-content: space-between;
 }
 .navegador .logo {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Chakra Petch", "Barlow Condensed";
   font-size: 45px;
   color: white;
   padding: 50px;
@@ -67,7 +68,7 @@
     margin-right: 15px;
     cursor: pointer;
     font-size: 25px;
-    font-family: "Chakra Petch", sans-serif;
+    font-family: "Chakra Petch", "Barlow Condensed";
   }
   .navegador .enlaces:hover {
     left: 0;
@@ -167,7 +168,7 @@
   color: #fbf6f6;
   font-size: 60px;
   margin: 20px;
-  text-shadow: 5px 5px 20px rgb(0, 0, 0);
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 576px) {
   .portada2 .letras-centrales {
@@ -540,7 +541,7 @@
   width: 450px;
 }
 .compra_guitarra h6 {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Chakra Petch", "Barlow Condensed";
   font-size: 30px;
   padding-bottom: 15px;
 }
