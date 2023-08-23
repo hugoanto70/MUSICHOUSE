@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-/*heater navegador*/
 .navegador {
   background-color: #1E1F26;
   display: flex;
@@ -195,7 +194,6 @@
   margin: 20px;
 }
 
-/*main index*/
 .mainindex {
   text-align: center;
   margin: 35px;
@@ -379,7 +377,6 @@
   }
 }
 
-/*FOOTER*/
 .pie {
   background-color: #1c1b1b;
   background-size: cover;
@@ -489,7 +486,6 @@
   }
 }
 
-/*Animacion*/
 .galeria {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -527,7 +523,6 @@
   }
 }
 
-/*COMPRA STRATOCASTER*/
 .compra_guitarra {
   display: grid;
   grid-template-columns: 50% 50%;
